@@ -28,7 +28,6 @@ def regression_covid_vaccination(final_dataset):
     regression2 = stats.pearsonr(final_dataset['Percentage MD Population Vaccinated'], final_dataset['percent_of_inpatients_with_covid'])
     return regression2
 
-
 def train_data(final_dataset, train_year):
     modeldata = final_dataset[["date_year", "tavg","percent_of_inpatients_with_covid", "Percentage MD Population Vaccinated"]]
     train_data = modeldata.loc[modeldata.date_year == train_year]
@@ -40,14 +39,10 @@ def train_data_Y(Train_data,Y):
     train_data_Y = Train_data[Y]
     return train_data_Y
 
-
-
-
 def test_data(final_dataset, test_year):
     modeldata = final_dataset[["date_year", "tavg","percent_of_inpatients_with_covid", "Percentage MD Population Vaccinated"]]
     test_data = modeldata.loc[modeldata.date_year == test_year]
     return test_data
-
 def test_data_X(Test_data,X1,X2):
     test_data_X = Test_data[[X1,X2]]
     return test_data_X
