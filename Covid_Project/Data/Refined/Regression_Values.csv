@@ -1,0 +1,3 @@
+Variable,Regression Value
+AVG Temperature and Covid,"PearsonRResult(statistic=-0.5457908007120774, pvalue=2.3241597531766727e-56)"
+Vaccination Rate and Covid,"PearsonRResult(statistic=-0.3826679681066392, pvalue=3.5338600158006694e-26)"
