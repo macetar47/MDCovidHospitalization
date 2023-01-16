@@ -13,7 +13,7 @@ def plot_temperature_covid(final_dataset):
     ax = sns.scatterplot(x="ScaledAvgTemp", y = "ScaledAvgCovid", data = final_dataset);
     ax.set_title("Percentage of impatients with covid based on weather (scaled)")
     ax.set_xlabel("Average Temperature in Celsius (Scaled)")
-    ax.set_ylabel("Percentages of Hospstal Impatients with Covid (Scaled)")
+    ax.set_ylabel("Percentages of Hospital Impatients with Covid (Scaled)")
     return ax
 def regression_temperature_covid(final_dataset):
     regression1 = stats.pearsonr(final_dataset['ScaledAvgTemp'], final_dataset['ScaledAvgCovid'])
